@@ -1,0 +1,16 @@
+name: ServerBars
+version: ${project.version}
+main: me.machinemaker.serverbars.ServerBars
+api-version: 1.13
+authors: [Machine_Maker]
+description: A fully customizable and animatable Boss Bar plugin
+
+commands:
+  serverbarsreload:
+    aliases: [sbr, sbreload]
+    description: Reloads the configuration
+
+permissions:
+  serverbars.reload:
+    description: Allows use of the reload command
+    default: op

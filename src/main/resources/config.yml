@@ -1,0 +1,35 @@
+##################################
+#    ServerBars Configuration    #
+##################################
+
+# World names in this list will not show a server bar from this plugin
+blacklist:
+  - world_the_end
+
+# This is a list of bars that the plugin will rotate through after the specified time.
+default-bar:
+    # Text to appear on the bar. Use & for color codes
+  - title: "&4Bar #1"
+    # Bar color, can be one of [blue, green, pink, purple, red, white, yellow]
+    color: "red"
+    # Bar style, can be one of [solid, segmented_6, segmented_10, segmented_12, segmented_20]
+    style: "solid"
+    # Time this bar will be shown in ticks (20 ticks = 1 second). Set to 0 for infinite.
+    time: 40
+
+  - title: "&e&lBar #2"
+    # If you do not specify one of the options, it will use the option from the previous entry
+    style: "segmented_20"
+    # The only option that is required, is "time" or how long that entry will exist for
+    time: 20
+
+# Any bar configured here will override the default bar for that specific world.
+# The blacklist will still override any bar configured here
+# Leave empty and remove the default "world_nether" to disable per-world ServerBars
+world-bars:
+  world_nether:
+    - title: "&cNether!"
+      color: "blue"
+      style: "solid"
+      time: 0
+
